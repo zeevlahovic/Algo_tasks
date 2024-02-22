@@ -25,6 +25,8 @@ public class IndexOfFirstNonRepeatingVowel {
             return -1;
         }
 
+
+
     }
 
 
