@@ -1,27 +1,35 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class AnimalsWentInTwoByTwo {
 
-    public static Map<String, Integer> getAnimalPairs(List<String> animals) {
-        Map<String, Integer> animalCounts = new HashMap<>();
 
-        // Count occurrences of each animal
-        for (String animal : animals) {
-            animalCounts.put(animal, animalCounts.getOrDefault(animal, 0) + 1);
+    public static void main(String[] args) {
+        AnimalCheck(Arrays.asList("goat", "goat", "rabbit", "rabbit", "rabbit", "duck", "horse", "horse", "swan"));
+    }
+
+    public static Map<String, Integer> AnimalCheck(List<String>animals){
+
+        Map<String,Integer>animalsCount = new HashMap<>();
+        for (String eachAnimal : animals) {
+            animalsCount.put(eachAnimal,animalsCount.getOrDefault(eachAnimal,0)+1);
         }
+        Map<String,Integer>readyToGoList = new HashMap<>();
+        for (Map.Entry<String, Integer> eachPair : animalsCount.entrySet()) {
 
-        // Filter animals with at least 2 occurrences
-        Map<String, Integer> pairs = new HashMap<>();
-        for (Map.Entry<String, Integer> entry : animalCounts.entrySet()) {
-            if (entry.getValue() >= 2) {
-                pairs.put(entry.getKey(), 2);
+            if (eachPair.getValue() >= 2){
+                readyToGoList.put(eachPair.getKey(),2);
+
             }
         }
+        System.out.println(readyToGoList);
+        return readyToGoList;
 
-        return pairs;
     }
+
+
 }
 
 
