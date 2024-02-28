@@ -18,7 +18,7 @@ public class SumOfDigitsUntilProducingSingleDigit {
             numbers.add(Character.getNumericValue(num.charAt(i)));
         }
 
-        int sumOfDigits = numbers.stream().reduce(0, Integer::sum);
+        int sumOfDigits = numbers.stream().reduce(Integer::sum).get();
 
         while (sumOfDigits >= 10) {
             sumOfDigits = sumOfDigitsUntilSingleDigit(sumOfDigits);
