@@ -52,4 +52,25 @@ public class EmailValidator {
     }
 }
 
+/*Question-1 Email Validator
+Your team has created a new bank website that requires email addresses to be validated.
+● The email string must contain only one '@' character.
+● The email string must contain an '.' character.
+● The '@' must contain at least one character in front of it. e.g. "a@cydeo.com" is valid while
+"@cydeo.com" is invalid.
+● The '.' and '@' must be in the appropriate places. e.g. "mike.smith@com" is invalid while
+"mike.smith@cydeo.com" is valid.
+For a given string, find a solution that writes true on the console if an email is valid and false if it is invalid.
+Examples:
+email = "test@cydeo.com" --> true
+email = "test@cydeo.co.uk --> true
+email = "mike.smith@cydeo.com --> true
+email = "mike.smith@com --> false
+email = "@cydeo.com" --> false
+email = "test@.com" --> false
+email = "test@cydeo." --> false
+email = "test@@cydeo.com" --> false
+
+ */
+
 

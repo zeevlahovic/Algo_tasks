@@ -24,3 +24,17 @@ public class FindPalindromeInGivenArray {
 
     }
 }
+
+/*Question-2 Find Palindrome Strings in given array
+Write a method that takes in a non-empty array of Strings that will return an ArrayList which consists of
+palindromic strings in given array.
+The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric
+digits.
+Examples:
+Input: String[] arr = {“abc”, “car”, “ada”, “racecar”, “cool”}
+Output: [“ada”, “racecar”]
+Explanation: These two are the only palindrome strings in the given array
+Input: String[] arr = {“def”, “ab”}
+Output:[]
+
+ */
