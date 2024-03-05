@@ -17,6 +17,12 @@ public class SumOfDigitsUntilProducingSingleDigit {
         for (int i = 0; i < num.length(); i++) {
             numbers.add(Character.getNumericValue(num.charAt(i)));
         }
+       /* for (Integer eachNumber : numbers) {
+            sumOfDigits += eachNumber;
+        }
+        System.out.println(sumOfDigits);
+
+        */
 
         int sumOfDigits = numbers.stream().reduce(Integer::sum).get();
 

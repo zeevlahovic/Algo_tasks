@@ -12,16 +12,16 @@ public class SumOfDigits {
 
         String num = n.toString();
         ArrayList<Integer> numbers = new ArrayList<>();
-        int sumOfDigits = 0;
+       // int sumOfDigits = 0;
 
         for (int i = 0; i <num.length() ; i++) {
             numbers.add(Character.getNumericValue(num.charAt(i)));
         }
-
-        for (Integer eachNumber : numbers) {
+      /*  for (Integer eachNumber : numbers) {
             sumOfDigits += eachNumber;
         }
-        System.out.println(sumOfDigits);
+       */
+        int sumOfDigits = numbers.stream().reduce(Integer::sum).get();
     }
 }
 
@@ -33,3 +33,10 @@ Input: n = 12
 Output: 3
 
  */
+
+//convert integer to string
+//split the given number into single digits and put the in a list
+//created empty list where we going to store the numbers
+//create a int variable where we going to store the sum
+//iterate the string by the index numbers
+//add numerical value of each char and sum them up
