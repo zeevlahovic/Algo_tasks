@@ -2,11 +2,12 @@ public class EmailValidator {
 
     public static boolean emailValidator(String email) {
 
-        int charAtCount = 0;
+
 
         if (!email.contains("@") || !email.contains(".")) {
             return false;
         }
+        int charAtCount = 0;
         for (int i = 0; i < email.length(); i++) {
             if (email.charAt(i) == '@') {
                 charAtCount++;
@@ -49,6 +50,8 @@ public class EmailValidator {
         System.out.println(emailValidator(email6));//false
         System.out.println(emailValidator(email7));//false
         System.out.println(emailValidator(email8));//false
+
+
     }
 }
 

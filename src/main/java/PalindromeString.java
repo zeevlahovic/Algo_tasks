@@ -11,9 +11,12 @@ public class PalindromeString {
 
 
     public static void main(String[] args) {
-        System.out.println(palindromeString("Was it a car or a cat I saw"));
+        System.out.println(palindromeString("Java"));
         System.out.println(palindromeString(""));
         System.out.println(palindromeString(" "));
+
+        String str = "Java";
+        System.out.println(str.length());
     }
 }
 
