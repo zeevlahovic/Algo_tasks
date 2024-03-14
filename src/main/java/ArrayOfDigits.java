@@ -4,7 +4,7 @@ public class ArrayOfDigits {
 
 
     public static void main(String[] args) {
-        int[] print = convertIntToArray(545);
+        int[] print = convertIntToArray(490);
         System.out.println(Arrays.toString(print));
     }
 
