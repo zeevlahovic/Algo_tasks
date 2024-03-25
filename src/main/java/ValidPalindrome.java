@@ -47,6 +47,9 @@ public class ValidPalindrome {
         boolean result = validPalindrome("Do geese see God?");
 
         System.out.println(result);
+
+        boolean result2 = validPalindrome("Do geese see God?");
+        System.out.println(result);
     }
 }
 
