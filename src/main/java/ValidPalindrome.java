@@ -19,7 +19,6 @@ public class ValidPalindrome {
         }
         reversedWord.removeIf(p->!Character.isLetter(p));
 
-
         if (word.equals(reversedWord)){
             return true;
         }
