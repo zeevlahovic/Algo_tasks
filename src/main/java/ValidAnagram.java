@@ -31,6 +31,7 @@ public class ValidAnagram {
         for (int i = 0; i < str2.length(); i++) {
             word2.add(str2.charAt(i));
         }
+
         Collections.sort(word1);
         Collections.sort(word2);
 
