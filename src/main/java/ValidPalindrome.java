@@ -4,18 +4,18 @@ public class ValidPalindrome {
 
     public static boolean validPalindrome(String str) {
 
-        String strLowerCase = str.toLowerCase();
+        str = str.toLowerCase();
 
         List<Character> word = new ArrayList<>();
         List<Character> reversedWord = new ArrayList<>();
 
-        for (int i = 0; i < strLowerCase.length(); i++) {
-            word.add(strLowerCase.charAt(i));
+        for (int i = 0; i < str.length(); i++) {
+            word.add(str.charAt(i));
         }
          word.removeIf(p->!Character.isLetter(p));
 
-        for (int i = strLowerCase.length()-1; i >=0 ; i--) {
-            reversedWord.add(strLowerCase.charAt(i));
+        for (int i = str.length()-1; i >=0 ; i--) {
+            reversedWord.add(str.charAt(i));
         }
         reversedWord.removeIf(p->!Character.isLetter(p));
 
@@ -25,14 +25,14 @@ public class ValidPalindrome {
         return false;
     }
 
-    public static boolean isPalindrome(String s) {
+    public static boolean validPalindrome2(String str) {
 
-        s = s.toLowerCase();
-        s = s.replaceAll("[^a-zA-Z0-9]", "");
+        str = str.toLowerCase();
+        str = str.replaceAll("[^a-zA-Z0-9]", "");
 
-        int left = 0, right = s.length() - 1;
+        int left = 0, right = str.length() - 1;
         while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
+            if (str.charAt(left) != str.charAt(right)) {
                 return false;
             }
             left++;
