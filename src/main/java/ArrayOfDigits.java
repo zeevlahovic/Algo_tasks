@@ -9,9 +9,9 @@ public class ArrayOfDigits {
     }
 
     public static int [] convertIntToArray(int n){
+
         String num = Integer.toString(n);
         int[]result = new int[num.length()];
-
         for (int i = 0; i <num.length() ; i++) {
             result[i] = Character.getNumericValue(num.charAt(i));
         }
