@@ -13,10 +13,7 @@ public class ValidAnagram {
         Arrays.sort(word1);
         Arrays.sort(word2);
 
-        if (Arrays.equals(word1,word2)){
-            return true;
-        }
-        return false;
+       return Arrays.equals(word1,word2);
     }
 
 

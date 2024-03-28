@@ -12,14 +12,14 @@ public class ValidPalindrome {
         for (int i = 0; i < str.length(); i++) {
             word.add(str.charAt(i));
         }
-         word.removeIf(p->!Character.isLetter(p));
+        word.removeIf(p -> !Character.isLetter(p));
 
-        for (int i = str.length()-1; i >=0 ; i--) {
+        for (int i = str.length() - 1; i >= 0; i--) {
             reversedWord.add(str.charAt(i));
         }
-        reversedWord.removeIf(p->!Character.isLetter(p));
+        reversedWord.removeIf(p -> !Character.isLetter(p));
 
-        if (word.equals(reversedWord)){
+        if (word.equals(reversedWord)) {
             return true;
         }
         return false;
@@ -30,7 +30,9 @@ public class ValidPalindrome {
         str = str.toLowerCase();
         str = str.replaceAll("[^a-zA-Z0-9]", "");
 
-        int left = 0, right = str.length() - 1;
+        int left = 0;
+        int right = str.length() - 1;
+
         while (left < right) {
             if (str.charAt(left) != str.charAt(right)) {
                 return false;
