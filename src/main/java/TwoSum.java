@@ -26,10 +26,10 @@ import java.util.Arrays;
         }
 
         public static void main(String[] args) {
-            int[] nums = {16, 3, 11, 5, 15};
+            int[] nums = {16, 3, 11, 5, 15}; // {3, 5, 11, 15, 16 }
             int target = 8;
 
-            System.out.println(Arrays.toString(twoSum(nums,8)));
+            System.out.println(Arrays.toString(twoSum(nums,target)));
         }
     }
 
