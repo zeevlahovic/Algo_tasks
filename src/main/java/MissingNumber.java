@@ -2,18 +2,19 @@ public class MissingNumber {
 
     public static int missingNumber(int[] nums) {
         int n = nums.length;
-        // Calculate the total sum using the formula for sum of an arithmetic progression
+        // total sum - arithmetic progression
         int totalSum = (n * (n + 1)) / 2;
 
-        // Calculate the actual sum of the numbers in the array
+        // actual sum of the numbers in the array
         int actualSum = 0;
         for (int num : nums) {
             actualSum += num;
         }
 
-        // Return the missing number
         return totalSum - actualSum;
     }
+
+
 }
 
 /*Question-1 Missing Number
