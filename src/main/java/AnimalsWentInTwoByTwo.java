@@ -7,10 +7,10 @@ public class AnimalsWentInTwoByTwo {
 
 
     public static void main(String[] args) {
-        AnimalCheck(Arrays.asList("goat", "goat", "rabbit", "rabbit", "rabbit", "duck", "horse", "horse", "swan"));
+        animalCheck(Arrays.asList("goat", "goat", "rabbit", "rabbit", "rabbit", "duck", "horse", "horse", "swan"));
     }
 
-    public static Map<String, Integer> AnimalCheck(List<String>animals){
+    public static Map<String, Integer> animalCheck(List<String>animals){
 
         Map<String,Integer>animalsCount = new HashMap<>();
         for (String eachAnimal : animals) {
