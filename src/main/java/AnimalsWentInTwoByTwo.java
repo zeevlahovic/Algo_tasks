@@ -12,7 +12,6 @@ public class AnimalsWentInTwoByTwo {
         animalCheck(Arrays.asList("dog", "goat", "dog"));
         animalCheck(Arrays.asList("dog", "cat", "dog", "cat", "beaver", "cat"));
         animalCheck(Arrays.asList("goat", "goat", "rabbit", "rabbit", "rabbit", "duck", "horse", "horse", "swan"));
-
     }
 
     public static Map<String, Integer> animalCheck(List<String>animals){
