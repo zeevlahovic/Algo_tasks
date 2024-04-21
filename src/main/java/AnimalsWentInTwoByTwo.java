@@ -24,8 +24,8 @@ public class AnimalsWentInTwoByTwo {
         for (Map.Entry<String, Integer> eachPair : animalsCount.entrySet()) {
 
             if (eachPair.getValue() >= 2){
+               // readyToGoList.put(eachPair.getKey(),eachPair.getValue());
                 readyToGoList.put(eachPair.getKey(),2);
-
             }
         }
         System.out.println(readyToGoList);
