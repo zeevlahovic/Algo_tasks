@@ -6,7 +6,7 @@ public class BuySellStock {
         int minNum = 105;
         int maxNum = 1;
         int buy = 0;
-        int buyIndex = 0;
+        int IndexOfBuy = 0;
         int sell = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -17,11 +17,11 @@ public class BuySellStock {
         }
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == buy) {
-                buyIndex = i;
+                IndexOfBuy = i;
                 break;
             }
         }
-        for (int i = buyIndex; i < arr.length; i++) {
+        for (int i = IndexOfBuy; i < arr.length; i++) {
             if (arr[i] > maxNum) {
                 maxNum = arr[i];
                 sell = maxNum;
