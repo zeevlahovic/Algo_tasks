@@ -40,15 +40,28 @@ public class BuySellStock {
 
         int[] arr = {7, 1, 5, 3, 6, 4};
         int[] arr2 = {7,6,4,3,1};
-        int[] arr3 = {5,6,4,3,1,8,55,6,3,1,2,5};
+        int[] arr3 = {5,6,4,3,8,55,6,3,2,5,1};
 
         System.out.println(buySellStock(arr));
         System.out.println(buySellStock(arr2));
         System.out.println(buySellStock(arr3));
 
 
+        System.out.println(maxProfit(arr));
 
     }
+
+    public static int maxProfit(int[] prices) {
+        int minBuy = prices[0];
+        int profit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            minBuy = Math.min(minBuy, prices[i]);
+            profit = Math.max(profit, prices[i] - minBuy);
+        }
+        return profit;      //return the maximum profit...
+    }
+
+
 
 }
 /*You are given an array prices where prices[i] is the price of a given stock on the ith day.
