@@ -30,9 +30,12 @@ public class PlusOne {
         int[] arr = {1,2,3};
         int[] arr2 = {4,3,2,1};
         int[] arr3 = {9};
+        int[] arr4 = {9,8,7,6,5};
+
 
         System.out.println(Arrays.toString(plusOne(arr)));
         System.out.println(Arrays.toString(plusOne(arr2)));
         System.out.println(Arrays.toString(plusOne(arr3)));
+        System.out.println(Arrays.toString(plusOne(arr4)));
     }
 }
